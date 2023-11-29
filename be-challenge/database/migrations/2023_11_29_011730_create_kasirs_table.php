@@ -9,7 +9,7 @@ class CreateKasirsTable extends Migration
     public function up()
     {
         Schema::create('kasirs', function (Blueprint $table) {
-            $table->id('KodeKasir');
+            $table->string('KodeKasir')->unique();
             $table->string('Nama');
             $table->string('HP');
             $table->timestamps();

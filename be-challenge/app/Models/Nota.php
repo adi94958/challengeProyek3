@@ -7,9 +7,8 @@ use Illuminate\Database\Eloquent\Model;
 
 class Nota extends Model
 {
-    protected $primaryKey = 'KodeNota';
-
-    protected $fillable = ['KodeTenan', 'KodeKasir', 'TglNota', 'JamNota', 'JumlahBelanja', 'Diskon', 'Total'];
+    public $incrementing = false;
+    protected $fillable = ['KodeNota', 'KodeTenan', 'KodeKasir', 'TglNota', 'JamNota', 'JumlahBelanja', 'Diskon', 'Total'];
 
     public function barangNota()
     {

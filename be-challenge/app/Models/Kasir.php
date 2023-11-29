@@ -9,7 +9,9 @@ class Kasir extends Model
 {
     protected $primaryKey = 'KodeKasir';
 
-    protected $fillable = ['Nama', 'HP'];
+    protected $fillable = ['KodeKasir', 'Nama', 'HP'];
+
+    public $incrementing = false;
 
     public function notas()
     {

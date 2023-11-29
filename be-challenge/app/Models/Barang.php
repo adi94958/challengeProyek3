@@ -9,7 +9,9 @@ class Barang extends Model
 {
     protected $primaryKey = 'KodeBarang';
 
-    protected $fillable = ['NamaBarang', 'Satuan', 'HargaSatuan', 'Stok'];
+    protected $fillable = ['KodeBarang', 'NamaBarang', 'Satuan', 'HargaSatuan', 'Stok'];
+
+    public $incrementing = false;
 
     public function notaBarang()
     {

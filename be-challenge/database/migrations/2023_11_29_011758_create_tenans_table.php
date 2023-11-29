@@ -9,7 +9,7 @@ class CreateTenansTable extends Migration
     public function up()
     {
         Schema::create('tenans', function (Blueprint $table) {
-            $table->id('KodeTenan');
+            $table->string('KodeTenan')->unique();
             $table->string('NamaTenan');
             $table->string('HP');
             $table->timestamps();

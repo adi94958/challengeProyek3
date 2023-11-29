@@ -9,7 +9,9 @@ class Tenan extends Model
 {
     protected $primaryKey = 'KodeTenan';
 
-    protected $fillable = ['NamaTenan', 'HP'];
+    protected $fillable = ['KodeTenan', 'NamaTenan', 'HP'];
+
+    public $incrementing = false;
 
     public function notas()
     {

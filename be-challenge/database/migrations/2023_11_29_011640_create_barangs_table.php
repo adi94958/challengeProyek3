@@ -9,7 +9,7 @@ class CreateBarangsTable extends Migration
     public function up()
     {
         Schema::create('barangs', function (Blueprint $table) {
-            $table->id('KodeBarang');
+            $table->string('KodeBarang')->unique();
             $table->string('NamaBarang');
             $table->string('Satuan');
             $table->decimal('HargaSatuan', 10, 2);
